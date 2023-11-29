@@ -1,0 +1,61 @@
+.Header {
+    background: linear-gradient(90deg, #812868 0%, #f954a4 100%);
+    color: white;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 100%;
+  }
+  
+  .branding p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .contact a {
+    color: white;
+    text-decoration: none;
+    margin:auto 10px;
+  }
+  
+  .email {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .email p {
+    margin: 0;
+    margin-left: 10px;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .social-media li {
+    margin-right: 15px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .Header {
+      flex-direction: column; /* Display items in a column direction on smaller screens */
+      align-items: flex-start; /* Align items to the start of the column */
+      align-items: center;
+    }
+  
+    .contact a,
+    .email,
+    .social-media {
+      margin-top: 10px; /* Add spacing between items */
+      margin-right: 0; /* Reset margin for items */
+    }
+  }
+  

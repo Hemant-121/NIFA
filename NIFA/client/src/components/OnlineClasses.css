@@ -1,0 +1,76 @@
+.outer-container {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  opacity: 0.9;
+  color: aliceblue;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2%;
+}
+
+.inner-container {
+  flex: 1; /* Make the inner boxes take equal height */
+  width: 100%; /* Take up full width initially */
+  max-width: 100%;
+  margin: 1%;
+  max-height: 100%; /* Adjust as needed */
+  width: 100%; /* Ensure the element takes the full width of the container */
+  height: auto;
+  overflow: hidden;
+}
+button {
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+}
+
+.video {
+  flex: 1; /* Make the inner boxes take equal height */
+  width: 100%; /* Take up full width initially */
+  max-width: 100%;
+  margin: auto;
+  padding: auto;
+  max-width: 100%; /* Adjust as needed */
+  max-height: 100%; /* Adjust as needed */
+  width: auto;
+  overflow: hidden;
+}
+
+iframe {
+  border: 5px solid rgb(240, 244, 240);
+}
+
+@media (max-width: 768px) {
+  .outer-box {
+    flex-direction: row; /* Switch to a row layout for smaller screens */
+  }
+
+  .inner-box {
+    max-width: none; /* Remove the max-width for smaller screens */
+  }
+  .video{
+    display: none;
+  }
+}
+@media (max-width: 576) {
+  .outer-box {
+    display: flex;
+    flex-direction: row; /* Switch to a row layout for smaller screens */
+  }
+
+  .inner-box {
+    max-width: none; /* Remove the max-width for smaller screens */
+  }
+}
